@@ -4,24 +4,22 @@ body {
 
 #card {
   background-color: white;
-  width: 33%;
+  width: 30%;
   padding-top: 20px;
-  padding-bottom: 20px;
-  margin-right: 33%;
-  margin-left: 33%;
-  margin-top: 15%;
+  margin:10% auto auto auto;
   border-radius: 5px;
-  padding-right: 50px;
-  padding-left: 50px;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-bottom: 20px;
   font-family: Oswald;
   text-align: right;
 }
 
-#quote {
+#quotebox {
   text-align: left;
 }
 
-#credit {
+#creditbox {
   font-family: Lato;
 }
 
@@ -29,9 +27,34 @@ body {
   float: left;
 }
 
+#getQuote {
+  float: right;
+  padding: 17px 30px;
+  font-family: Oswald;
+  font-size: 15px;
+}
+
+.btn-left {
+  float: left;
+  margin-right: 15px;
+  width: 60px;
+}
+
 button {
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  color: white;
   background: grey;
   border: none;
-  padding: 5px;
+  padding: 15px;
   border-radius: 5px;
+  height: 60px;
+}
+
+button img {
+  max-width: 15px;
+}
+
+button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
