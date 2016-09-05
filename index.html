@@ -20,18 +20,16 @@
         <h4 id=author></h4>
       </div>
 
-      <script type="text/javascript">
-		    function parseQuote(response){
-			    document.getElementById("quote").innerHTML = ' " ' + response.quoteText;
-			    document.getElementById("author").innerHTML = ' - ' + response.quoteAuthor;
-		    }
-	    </script>
 
-	    <script type="text/javascript" src="http://api.forismatic.com/api/1.0/?method=getQuote&format=jsonp&jsonp=parseQuote&lang=en"></script>
 
       <div>
-        <button class="btn-left"><img src="wtwitter.png"/></button>
-        <button class="btn-left"><img src="wtwittert.png"/></button>
+        <button class="btn-left">
+          <img src="wtwitter.png"/>
+          <a id="tweetthis" href="https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text="></a>
+        </button>
+
+
+
         <button id="newQuote">Get Another Quote!</button>
       </div>
     </div>
