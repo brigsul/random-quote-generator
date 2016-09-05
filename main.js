@@ -11,9 +11,9 @@ function fetchQuote(){
     success:function(response){
       console.log(response);
       $('#quote').html(' " ' + response.quoteText);
-      tweetquote = "https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=" + response.quoteText.replace(/ /g,'');
+      tweetquote = response.quoteText;//.replace(/ /g,'%20').replace(/,/g, '%2C').replace(/\?/g, '%3F').replace(/\./g,'%2E');
       console.log(tweetquote);
-      document.getElementById("tweetthis").href = tweetquote;
+      $('tweetthis').attr('data-text', tweetquote);
       if (response.quoteAuthor == ''){
         $('#author').html(' - Unknown');
       }

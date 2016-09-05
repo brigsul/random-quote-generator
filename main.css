@@ -31,7 +31,6 @@ body {
   float: right;
   padding: 17px 30px;
   font-family: Oswald;
-  font-size: 15px;
 }
 
 .btn-left {
@@ -49,6 +48,7 @@ button {
   padding: 15px;
   border-radius: 5px;
   height: 60px;
+  font-weight: bold;
 }
 
 button img {
