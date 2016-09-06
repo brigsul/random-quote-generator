@@ -13,7 +13,6 @@ function fetchQuote(){
       $('#quote').html(' " ' + response.quoteText);
       tweetquote = response.quoteText;//.replace(/ /g,'%20').replace(/,/g, '%2C').replace(/\?/g, '%3F').replace(/\./g,'%2E');
       console.log(tweetquote);
-      $('tweetthis').attr('data-text', tweetquote);
       if (response.quoteAuthor == ''){
         $('#author').html(' - Unknown');
       }
@@ -44,7 +43,10 @@ $(document).ready(function(){
   $("#newQuote").on("click", function() {
     newColor();
     fetchQuote();
+  });
 
+  $("#tweetthis").on("click", function() {
+    window.open('http://twitter.com/intent/tweet?text=' + tweetquote);
   });
 
 
